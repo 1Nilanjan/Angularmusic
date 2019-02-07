@@ -1,0 +1,8 @@
+<div class="container">
+  <!-- <app-track-list [tracks]="tracks" class="row"></app-track-list>
+</div> -->
+<app-track-card *ngFor="let track of tracks"
+[track]="track"
+(trackAddToWishListevent)="trackAddToWishList($event)"
+></app-track-card>
+</div>

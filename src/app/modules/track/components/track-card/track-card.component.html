@@ -1,0 +1,16 @@
+<div class="card bg-light my-5">
+    <img class="card-img-top" src="{{ track.image[3]['#text'] }}" alt="{{ track.name }}">
+    <div class="card-body">
+      <h5 class="card-title">{{ track.name }}</h5>
+      <h6 class="card-subtitle m-2 text-muted">{{ track.artist.name }}</h6>
+       <button type="button" class="btn btn-primary m-2" (click)="trackAddToWishList()">Add to Playlist</button>
+     <!-- <button type="button" class="btn-primary m-2" (click)
+          class="deletebutton"
+          mat-mini-fab
+          (click)="deleteTrack(track)"
+          matTooltip="Delete from WishList">
+          <i class="material-icons"> delete </i>
+        </button> -->
+      <button type="button" class="btn btn-secondary m-2">Play Track</button>
+    </div>
+</div>
